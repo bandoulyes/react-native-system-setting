@@ -12,13 +12,13 @@ It provides some system setting APIs for you. Support iOS and Android both.
 
 ### Note
 
-**[Example](https://github.com/c19354837/react-native-system-setting/tree/master/examples/SystemSettingExample) only work in the real device**
+**[Example](https://github.com/bandoulyes/react-native-system-setting/tree/master/examples/SystemSettingExample) only work in the real device**
 
 ### Change Log
 
-[Change Log](https://github.com/c19354837/react-native-system-setting/blob/master/CHANGELOG.md)
+[Change Log](https://github.com/bandoulyes/react-native-system-setting/blob/master/CHANGELOG.md)
 
-breaking change for permission since V1.5.0, see [Android Permission](https://github.com/c19354837/react-native-system-setting#android-permission)
+breaking change for permission since V1.5.0, see [Android Permission](https://github.com/bandoulyes/react-native-system-setting#android-permission)
 
 ## Look like
 
@@ -26,8 +26,8 @@ I really want to show the .gif, while it has no difference with .jpg for some sy
 
 I strongly recommend you to run the example in real device to see how it works.
 
-<img src="https://raw.githubusercontent.com/c19354837/react-native-system-setting/master/screenshot/ios.png" width = "40%"/>&nbsp;&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/c19354837/react-native-system-setting/master/screenshot/android.jpg" width = "40%" />
+<img src="https://raw.githubusercontent.com/bandoulyes/react-native-system-setting/master/screenshot/ios.png" width = "40%"/>&nbsp;&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/bandoulyes/react-native-system-setting/master/screenshot/android.jpg" width = "40%" />
 
 ## Install
 Run `npm i -S react-native-system-setting`
@@ -113,7 +113,7 @@ const volumeListener = SystemSetting.addVolumeListener((data) => {
 SystemSetting.removeVolumeListener(volumeListener)       
 ```
 
-> `setVolume` can do more, [more detail](https://github.com/c19354837/react-native-system-setting/blob/master/API.md) 
+> `setVolume` can do more, [more detail](https://github.com/bandoulyes/react-native-system-setting/blob/master/API.md) 
 
 **brightness**
 
@@ -145,7 +145,7 @@ SystemSetting.getAppBrightness().then((brightness)=>{
 })
 ```
 
-> `setBrightness()` & `saveBrightness()` need [permission](https://github.com/c19354837/react-native-system-setting#android-permission) for Android
+> `setBrightness()` & `saveBrightness()` need [permission](https://github.com/bandoulyes/react-native-system-setting#android-permission) for Android
 
 **Wifi**
 
@@ -160,9 +160,9 @@ SystemSetting.switchWifi(()=>{
 })
 ```
 
-> `isWifiEnabled()` need [permission](https://github.com/c19354837/react-native-system-setting#android-permission) for Android
+> `isWifiEnabled()` need [permission](https://github.com/bandoulyes/react-native-system-setting#android-permission) for Android
 > 
-> `switchWifi()` is disabled by default for iOS since V1.7.0, [enable it](https://github.com/c19354837/react-native-system-setting/blob/master/iOS.md#ios)
+> `switchWifi()` is disabled by default for iOS since V1.7.0, [enable it](https://github.com/bandoulyes/react-native-system-setting/blob/master/iOS.md#ios)
 
 **Location**
 
@@ -176,7 +176,7 @@ SystemSetting.switchLocation(()=>{
     console.log('switch location successfully');
 })
 ```
-> `switchLocation()` is disabled by default for iOS since V1.7.0, [enable it](https://github.com/c19354837/react-native-system-setting/blob/master/iOS.md#ios)
+> `switchLocation()` is disabled by default for iOS since V1.7.0, [enable it](https://github.com/bandoulyes/react-native-system-setting/blob/master/iOS.md#ios)
 
 **Bluetooth**
 
@@ -191,9 +191,9 @@ SystemSetting.switchBluetooth(()=>{
 })
 ```
 
-> `isBluetoothEnabled()` need [permission](https://github.com/c19354837/react-native-system-setting#android-permission) for Android
+> `isBluetoothEnabled()` need [permission](https://github.com/bandoulyes/react-native-system-setting#android-permission) for Android
 >
-> All bluetooth-function are disabled by default for iOS since V1.7.0, [enable it](https://github.com/c19354837/react-native-system-setting/blob/master/iOS.md#ios)
+> All bluetooth-function are disabled by default for iOS since V1.7.0, [enable it](https://github.com/bandoulyes/react-native-system-setting/blob/master/iOS.md#ios)
 
 **Airplane**
 
@@ -208,9 +208,9 @@ SystemSetting.switchAirplane(()=>{
 })
 ```
 
-> `isAirplaneEnabled()` will always return `true` for iOS if your device has no SIM card, see [detail](https://github.com/c19354837/react-native-system-setting/issues/37)
+> `isAirplaneEnabled()` will always return `true` for iOS if your device has no SIM card, see [detail](https://github.com/bandoulyes/react-native-system-setting/issues/37)
 > 
-> `switchAirplane()` is disabled by default for iOS since V1.7.0, [enable it](https://github.com/c19354837/react-native-system-setting/blob/master/iOS.md#ios)
+> `switchAirplane()` is disabled by default for iOS since V1.7.0, [enable it](https://github.com/bandoulyes/react-native-system-setting/blob/master/iOS.md#ios)
 
 **Other**
 
@@ -221,7 +221,7 @@ SystemSetting.openAppSystemSettings()
 
 ## API
 
-[API](https://github.com/c19354837/react-native-system-setting/blob/master/API.md)
+[API](https://github.com/bandoulyes/react-native-system-setting/blob/master/API.md)
 
 ## Run example
 
@@ -236,13 +236,13 @@ $ react-native run-ios
 
 ## iOS
 
-To be more friendly to app store, I disable some APIs for iOS since V1.7.0, You can [enable it](https://github.com/c19354837/react-native-system-setting/blob/master/iOS.md#ios) in a few steps.
+To be more friendly to app store, I disable some APIs for iOS since V1.7.0, You can [enable it](https://github.com/bandoulyes/react-native-system-setting/blob/master/iOS.md#ios) in a few steps.
 
 ## Android permission
  
 ### API
 
-Default permissions are removed since V1.5.0, see [this PR](https://github.com/c19354837/react-native-system-setting/pull/44). You need to declare the corresponding permissions in your app's AndroidManifest.xml, see [example AndroidManifest.xml](https://github.com/c19354837/react-native-system-setting/blob/master/examples/SystemSettingExample/android/app/src/main/AndroidManifest.xml)
+Default permissions are removed since V1.5.0, see [this PR](https://github.com/bandoulyes/react-native-system-setting/pull/44). You need to declare the corresponding permissions in your app's AndroidManifest.xml, see [example AndroidManifest.xml](https://github.com/bandoulyes/react-native-system-setting/blob/master/examples/SystemSettingExample/android/app/src/main/AndroidManifest.xml)
 
 **`android/app/src/main/AndroidManifest.xml`**
 
@@ -276,17 +276,17 @@ Default permissions are removed since V1.5.0, see [this PR](https://github.com/c
 
 ### Do Not Disturb
 
-`setVolume()` may cause a crash: **Not allowed to change Do Not Disturb state**. See [detail](https://github.com/c19354837/react-native-system-setting/issues/48).
+`setVolume()` may cause a crash: **Not allowed to change Do Not Disturb state**. See [detail](https://github.com/bandoulyes/react-native-system-setting/issues/48).
 
 ### Runtime permission for Android 6+
 
-Change *brightness* and *screen mode* need `android.permission.WRITE_SETTINGS` which user can disable it in phone Setting. When you call `setScreenMode()`, `setBrightness()` or `setBrightnessForce()` , it will return false if the app has no permission, and you can call `SystemSetting.grantWriteSettingPermission()` to guide user to app setting page. see [example](https://github.com/c19354837/react-native-system-setting/tree/master/examples/SystemSettingExample)
+Change *brightness* and *screen mode* need `android.permission.WRITE_SETTINGS` which user can disable it in phone Setting. When you call `setScreenMode()`, `setBrightness()` or `setBrightnessForce()` , it will return false if the app has no permission, and you can call `SystemSetting.grantWriteSettingPermission()` to guide user to app setting page. see [example](https://github.com/bandoulyes/react-native-system-setting/tree/master/examples/SystemSettingExample)
 
-> If you just want to change app's brightness, you can call `setAppBrightness(val)`, and it doesn't require any permission. see [API](https://github.com/c19354837/react-native-system-setting/blob/master/API.md)
+> If you just want to change app's brightness, you can call `setAppBrightness(val)`, and it doesn't require any permission. see [API](https://github.com/bandoulyes/react-native-system-setting/blob/master/API.md)
 
 ## In the end
 
 Feel free to open issue or pull request
 
 ## License
-[**MIT**](https://github.com/c19354837/react-native-system-setting/blob/master/LICENSE.md)
+[**MIT**](https://github.com/bandoulyes/react-native-system-setting/blob/master/LICENSE.md)
